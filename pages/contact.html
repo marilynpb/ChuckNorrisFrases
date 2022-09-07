@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/contact.css">
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <nav>  
+            <a href=""><img src="../imgChuck/icon.png"></a>
+            <p class="title">The best phrases of Chuck Norris</p>
+            <ul>
+                <li><a href="../index.html" class="home">Home</a></li>
+                <li><a href="./pages/about.html">About Chuck Norris</a></li>
+            </ul>
+        </nav>
+    <main>
+        <div class="container">
+            <h2>Contact me</h2>
+            <form method="get">
+                <input type="text" placeholder="Name" name='nombre'/><br/>
+
+                <input type="email" placeholder="E-mail" name='email'/><br/>
+
+                <input type="text" placeholder="Message" class="mensaje" name='mensaje'/><br/>
+                
+                <button type='submit' onclick="aceptar()" id="send">Send</button>   
+            </form>
+            <div class="alerta" id="mostrarAlerta" value="noclick">
+                <h2>Thank you for contacting me, your message was sent successfully</h2>
+                <button onclick="aceptar()">aceptar</button>
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+        <h4>©2022 Marilyn Peréz Boyko</h4>
+    </footer>
+    </header>
+    <script src="../js/contact.js"></script>
+</body>
+</html>
