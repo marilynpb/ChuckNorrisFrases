@@ -1,43 +1,47 @@
+@font-face {
+    font-family: 'Product-sans';
+    src: url('../product-sans/Product\ Sans\ Regular.ttf') format('truetype');
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0%;
+    font-family: 'Product-sans', Arial, sans-serif;;
 }
 
 body{
-    background-color: orange;
+    background-color: orange!important;
     width: 100%;
-    height: 100%;
+    height: auto;
     text-align: center;
+}
+
+.main{
+    height: 66vh;
 }
 
 header{
     background-color: rgba(249, 252, 252, 0.26);
     width: 95%;
-    height: 80px;
+    min-height: 80px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 20px;
-    margin-top: 10px;
+    margin-top: 20px;
     
 }
 
 nav{
+    border-radius: 20px;
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content:space-between;
-    line-height: 80px;
+    background-color: rgba(249, 252, 252, 0.26);
 }
 
-ul{
-   display: flex; 
-}
 
 li{
-    width: 240px;
     list-style: none;
-    line-height: 80px;
     font-size: 22px;
     font-weight: bold;
     text-shadow: 0px 3px 3px rgba(251, 102, 3, 0.623);
@@ -54,21 +58,18 @@ a{
 }
 
 li:hover{
-    background-color:rgba(249, 252, 252, 0.26);
+    background-color:rgba(251, 102, 3, 0.623);
     border-radius: 20px;
 }
 
-
-
 header img{
-    width: 100%;
-    height: 120%;
+    width: 90px;
+    height: auto;
 }
 
 header p{
     font-size: 27px;
     font-weight: bold;
-    margin-left: -90px;
     text-shadow: 0 1px 0px #b47837, 1px 0 0px #e07415, 1px 2px 1px #b26d0c, 2px 1px 1px #6b4d07, 2px 3px 2px #ad5707, 3px 2px 2px #954f04, 3px 4px 2px #9f3406, 4px 3px 3px #c1720a, 4px 5px 3px #a45108, 5px 4px 2px #e69021, 5px 6px 2px #d5911d, 6px 5px 2px #e86e0a, 6px 7px 1px #fc7804, 7px 6px 1px #65431c, 7px 8px 0px #da5c13, 8px 7px 0px #eb8b24;
 }
 
@@ -93,7 +94,7 @@ button{
     border: 2px solid rgb(63, 93, 8);
     margin-top: 2%;
     border-radius: 30px;
-    font-size: 18px;
+    font-size: 20px!important;
     font-weight: bold;
 }
 
@@ -117,7 +118,9 @@ button:hover{
     margin-top: 2%;
     padding-top: 0.1px;
     background-image: url('../imgChuck/aaa.jpg');
-    background-size: 75%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 img{
@@ -137,7 +140,30 @@ footer{
     line-height: 50px;
     border-radius: 20px;
     margin-bottom: 10px;
-    
 }
 
 
+@media (max-width: 1200px) {
+    .nav-item{
+        font-size: 19px;
+    }
+    header p{
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 510px) {
+    header p, .navbar-brand{
+        font-size: 18px;
+        margin-left: auto!important;
+        margin-right: auto!important;
+        text-align: center!important;
+
+    }
+    header p img{
+        display: none;
+    }
+    .fraseH1{
+        font-size: 25px;
+    }
+}
